@@ -9,5 +9,6 @@ My Project Name
   * C
 
   * **Platforms**
+  -----------------------
   1. *X*
   1. *Y*
