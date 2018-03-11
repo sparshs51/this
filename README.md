@@ -1,5 +1,5 @@
 **My Project Name**
 ===============
-_Model
+**Model**
 -----------
-*Description
+*Description*
