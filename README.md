@@ -1,4 +1,2 @@
-This
-==
-Is
-===
+My Project Name
+===============
