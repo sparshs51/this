@@ -1,2 +1,2 @@
-My Project Name
+**My Project Name**
 ===============
