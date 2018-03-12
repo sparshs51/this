@@ -5,5 +5,5 @@
 
 
 __This project aims to build a Blog publishing Web Application that allows multi-user blogs
-This application uses HTML, CSS, JavaScript and Python3 Frameworks. __
+This application uses HTML, CSS, JavaScript and Python3 Frameworks.
   
