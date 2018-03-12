@@ -4,5 +4,5 @@
 -----------------------------------------------
 
 
-**This is a Blog publishing Web Application that allows multi-user blogs
+__This is a Blog publishing Web Application that allows multi-user blogs__
   
