@@ -17,30 +17,100 @@
   <div id="id01" class="modal">
     <!-- TO OPEN THE MODAL LOGIN-->
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-	<form class="modal-content animate" action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="images/download.png" alt="Avatar" class="avatar">
-  </div>
+	
+	<div id="wrapper">
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+     
+ <div id="boxy-login-wrapper">
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+            
+ <form id="boxy-login-form" name="boxy-login-form" > 
+              
+                  
+<fieldset>
+                      
+<div class="boxy-form-inner rotateFirst3d">
+            
+                          
+<span class="end-cap left">
+<span class="glyphicon glyphicon-user" data-toggle="tooltip" title="click to login">
+</span>
+</span>
+                      
+                            
+<span class="side front">
+                                  
+<span class="glyphicon glyphicon-user" data-toggle="tooltip" title="enter your username">
+</span>
+                                 
+ <input id="boxy-input"  type="input" name="username" class="rotate" placeholder="username" required />
+                                  <button class="boxy-button next-field" data-step="0"></button>
+                            </span>
 
-  <div class="container" style="background-color:#e9e9e9">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn animate2">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+                            <span class="side bottom">
+                                  <span class="glyphicon glyphicon-asterisk" data-toggle="tooltip" title="enter your password"></span>
+                                  <input id="boxy-password" step="2" type="password" name="password" class="rotate" placeholder="password" required />
+                                  <button class="boxy-button next-field sub" data-step="1"></button>
+                            </span>
+
+                            <span class="side back">
+                                  <span class="boxy-checked glyphicon glyphicon-check"></span>
+                                  <span class="boxy-unchecked glyphicon glyphicon-unchecked"></span>
+                                      <label for="remember-me">
+                                        
+<input id="remember-me" type="checkbox" name="remember-me" checked />remember me next time?
+                                      </label>
+                                  <button class="boxy-button boxy-final-button" data-step="2">OK</button>
+                            </span>
+
+                            <span class="side top">
+                                  <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" title="we'll email login details."></span>
+                                  <input id="boxy-email" step="9" type="email" name="email" class="rotate" placeholder="email" />
+                                  <button class="boxy-button next-field forgot-btn" data-step="9"></button>
+                            </span>
+                            <span class="end-cap right">
+                                <span class="glyphicon glyphicon-remove-circle icon-failure" data-toggle="tooltip" title="login failed, try again"></span>
+                                <span class="glyphicon glyphicon-user icon-success" data-toggle="tooltip" title="">
+</span>
+                            
+</span>
+                      
 </div>
+                  
+</fieldset>
+               
+</form>
+
+            
+<span class="boxy-refresh glyphicon glyphicon-refresh">
+</span>
+            
+<em class="small-forgot">
+                      
+<a href="#" class="boxy-forgot">forgot?</a>
+            
+</em>
+
+        
+</div>
+   </div>
+   
+	
+</div>
+<div id="r8-logo-coin" ></div>
+  
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.2.0/bootbox.min.js'></script>
+
+<script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/1251/bootstrap.glyphs.js'></script>
+
+  
+
+    
+<script  src="js/index.js"></script>
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
