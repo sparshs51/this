@@ -1,0 +1,28 @@
+
+body{
+
+    color: #e2e2e2;
+	font-size: 16px;
+	background-color: #61122f;
+	font-family: Dancing Script, cursive; 
+}
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url("images/flower.jpg");
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin-top: 10px 15px 10px 0;
+	border-radius: 80px;
+}
+
+#pen{
+	float: right;
+	width: 20px;
+	height: 20px;
+}
