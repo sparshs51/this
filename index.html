@@ -13,39 +13,40 @@
 </head>
   <body>
       <div id="tit"><a href="index.html"><h1 id="heading">Student blog</h1></a></div>
-    <div id="butt">
-    <button onclick="document.getElementById('id01').style.display='block'" class="log">Login </button>
-  <div id="id01" class="modal">
+      <div id="butt">
+        <button onclick="document.getElementById('id01').style.display='block'" class="log">Login </button>
+        <div id="id01" class="modal">
     <!-- TO OPEN THE MODAL LOGIN-->
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-  <form class="modal-content animate" action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="images/download.png" alt="Avatar" class="avatar">
-  </div>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+          <form class="modal-content animate" action="timeline.html" method="post">
+            <div class="imgcontainer">
+              <img src="images/download.png" alt="Avatar" class="avatar">
+            </div>
 
-  <div class="container" id="formtext">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+            <div class="container" id="formtext">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button ><a href="timeline.html">Login</a></button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button>Login</a></button>
 
-  <div class="container" style="background-color:#e9e9e9">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn animate2">Cancel</button>
-    <span class="psw"><a href="#">Forgot password?</a></span>
-  </div>
-</form>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
 
-</div>
+            <div class="container" style="background-color:#e9e9e9">
+             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn animate2">Cancel</button>
+             <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+          </form>
+
+        </div>
 <div id="text">
 <div style="color: #202835">Not a member?</div>
-<div><a href="signup.html" >Sign up!</a></div>
+<div><a href="signup.html" style="color: ">Sign up!</a></div>
 </div>
 </div>
 

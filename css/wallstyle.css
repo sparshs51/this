@@ -10,11 +10,7 @@ Version: 1.1
 [Main Color]
 here you can change #f3ad00 main color.
 -----------------------------------------------------------------*/
-*{
 
-  font-family: Dancing Script, cursive; 
-  font-size: 16px;
-}
 .btn-social, .badge, .btn-social, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
@@ -43,13 +39,17 @@ here you can change #f3ad00 main color.
 1. Body
 -----------------------------------------------------------------*/
 
+
+
 html, body, .sidebar-nav, .content-posts {
     height: 100%;
 }
 
 body {
     background: #edf1f5;
-    font-family: Poppins, sans-serif;
+font-family: Hi Melody, cursive;
+font-size: 20px;
+font-weight: 20px;
 }
 
 a, a:link, a:visited, a:focus {
@@ -61,18 +61,23 @@ b, strong {
     font-weight: 600;
 }
 
-h1, h2, h3 { font-weight: 600; }
+h1, h2, h3 { font-weight: 600; 
+font-family: Dancing Script, cursive;
+}
 
-h2 {  font-size:22px; }
+h2 {  font-size:22px;
+text-align: center; }
 
 h3 { font-size: 15px;
      margin-top:0;
      margin-bottom:5px;}
 
-video, img {
+img {
     width: 100%;
-    height: auto;
+    height: 30%;
 }
+
+
 
 .emoji  { width:16px;}
 
@@ -82,14 +87,16 @@ video, img {
     margin-left: 240px;
     margin-top: 65px;
 }
-
 .img-user {
-    width: 90%;
-    margin-left: 5%;
+    width: 200px;
+    margin-left: 10px;
+    height: auto;
+    margin-right: 0;
 }
-
-.card-post .img-user  { max-width: 110px;
-                        min-width: 60px;}
+.card-post .img-user  { 
+                          max-width: 110px;
+                        min-width: 60px;
+                        margin-left: 0;}
 
 .card-post .chat-row .img-user { min-width:inherit; }
 
@@ -111,7 +118,7 @@ header {
     min-height: 50px;
     background: #4F5467;
     font-size: 14px;
-    padding: 15px 130px 10px 370px;
+    padding: 15px 130px 10px 0px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -173,6 +180,10 @@ header .badge {
     top: -8px;
     right: -12px;
 }
+#bru{
+
+    font-size: 1.1em;
+}
 
 .new-not {
     background: #ffeab6;
@@ -189,12 +200,12 @@ header .badge {
 }
 
 .sidebar-nav {
-    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     position: fixed;
     width: 240px;
     top: 0px;
-    padding: 50px 10px 0px 10px;
-    background: #ffffff;
+    padding: 50px 0px 0px 10px;
+    background: #e5ecf1;
     z-index: 99;
 }
 
@@ -217,7 +228,7 @@ header .badge {
 }
 
 .img-post {
-    width: 100%;
+    width: 50%;
 }
 
 .info-user i { color:#929292; }
@@ -470,7 +481,9 @@ footer.login-footer {
   .box-sizing(border-box);
 }
 
-
+.text-center{
+      text-align: center;
+}
 
 html {
   font-size: 10px;
@@ -485,7 +498,6 @@ body {
   background-color: @body-bg;
 }
 
-// Reset fonts for relevant elements
 input,
 button,
 select,
@@ -496,7 +508,7 @@ textarea {
 }
 
 
-// Links
+
 
 a {
   color: @link-color;
@@ -519,25 +531,23 @@ figure {
 }
 
 
-// Images
-
 img {
   vertical-align: middle;
 }
 
-// Responsive images (ensure images don't scale beyond their parents)
+video{
+  height: 30%;
+  max-height: 500px;
+}
+
 .img-responsive {
   .img-responsive();
 }
 
-// Rounded corners
 .img-rounded {
   border-radius: @border-radius-large;
 }
 
-// Image thumbnails
-//
-// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
 .img-thumbnail {
   padding: @thumbnail-padding;
   line-height: @line-height-base;
@@ -546,17 +556,12 @@ img {
   border-radius: @thumbnail-border-radius;
   .transition(all .2s ease-in-out);
 
-  // Keep them at most 100% wide
-  .img-responsive(inline-block);
 }
 
-// Perfect circle
 .img-circle {
-  border-radius: 50%; // set radius in percents
+  border-radius: 50%;
 }
 
-
-// Horizontal rules
 
 hr {
   margin-top:    @line-height-computed;
@@ -575,7 +580,36 @@ hr {
   clip: rect(0,0,0,0);
   border: 0;
 }
-
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
 .sr-only-focusable {
   &:active,
   &:focus {
@@ -619,6 +653,10 @@ hr {
   header { padding:0px;
            min-height: 104px;
            padding-left:125px;}
+  video{
+  width: 100%;
+  height: 300px;
+}
 
   header .search, header .search input, header .dropdown { width:100%; }
 
@@ -628,7 +666,7 @@ hr {
   header .dropdown-menu { top:36px; }
 
   .sidebar-nav {  width:125px;
-                  height: auto;
+                  height: 0;
                   padding: 10px;}
 
   .img-user   { width:80%;

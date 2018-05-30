@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css">
     <script src="lib/jquery-3.2.0.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="lib/bootstrap-switch/css/bootstrap-switch.min.css">
     <script src="lib/bootstrap-switch/js/bootstrap-switch.min.js"></script>
     <script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
-    <script src="js/lazy-load.min.js"></script>
+    <script src="js/lazy-load.min.js"></script> 
     <script src="js/another.min.js"></script>
+    <script src="js/socialyte.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/wallstyle.css" type="text/css">
@@ -23,14 +24,14 @@
 <body id="wall">
 
     <!--Header with Nav -->
-    <header class="text-right">
+    <header class="text-right" id="bru">
         <form class="text-left search" method="GET">
             <input name="q" type="text" placeholder="Search..">
         </form>
         <div class="menu-icon">
             <div class="dropdown">
                 <span class="dropdown-toggle" role="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <span class="hidden-xs hidden-sm">Settings</span> <i class="fa fa-cogs" aria-hidden="true"></i>
+                  <span class="hidden-xs hidden-sm">Log Out?</span> <i class="fa fa-cogs" aria-hidden="true"></i>
                 </span>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSettings">
                     <li>
@@ -39,7 +40,7 @@
                                 <i class="fa fa-wrench" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-8 text-left">
-                                <span>Settings</span>
+                                <span>LogOut!</span>
                             </div>
                         </a>
                     </li>
@@ -59,7 +60,7 @@
                                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-8 text-left">
-                                <span>Logout</span>
+                                <span><a href="index.html">Logout</a></span>
                             </div>
                         </a>
                     </li>
@@ -77,7 +78,7 @@
             </span>
         </div>
         <div class="second-icon menu-icon">
-            <span><a href="wall.html" title="Wall"><span class="hidden-xs hidden-sm">Wall</span> <i class="fa fa-database" aria-hidden="true"></i></a>
+            <span><a href="timeline.html" title="Wall"><span class="hidden-xs hidden-sm">Wall</span> <i class="fa fa-database" aria-hidden="true"></i></a>
             </span>
         </div>
     </header>
@@ -87,9 +88,9 @@
         <a href="personal-profile.html" title="Profile">
             <img src="img/user.jpg" alt="User name" class="img-circle img-user">
         </a>
-        <h2 class="text-center hidden-xs"><a href="personal-profile.html" title="Profile">My User</a></h2>
+        <h2 class="text-center hidden-xs"><a href="personal-profile.html" title="Profile">Sparsh Singh</a></h2>
         <p class="text-center user-description hidden-xs">
-            <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+            <i>Yo Ssup. <br> this is me. <br> I'm 20 <br> IET, Lucknow </i>
         </p>
     </div>
 
@@ -105,21 +106,21 @@
                         </a>
                     </div>
                     <div class="col-xs-9 col-sm-10 info-user">
-                        <h3><a href="personal-profile.html" title="Profile">My User</a></h3>
+                        <h3><a href="personal-profile.html" title="Profile">You</a></h3>
                         <p><i>2h</i></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 data-post">
-                        <p>Lorem Ipsum Dolor si amet</p>
+                        <p>Hey guys, You are reading my blog. I am a second year Computer Science student in IET Lucknow and this my test post.<br>Ok.&nbsp;Bye!</p>
                         <div class="reaction">
                             &#x2764; 156 &#x1F603; 54
                         </div>
                         <div class="comments">
-                            <div class="more-comments">View more comments</div>
+                            <div class="more-comments">View more comments..</div>
                             <ul>
-                                <li><b>User1</b> Lorem Ipsum Dolor si amet</li>
-                                <li><b>User2</b> Lorem Ipsum Dolor si amet &#x1F602;</li>
+                                <li><b>Roli</b> Nice Work.</li>
+                                <li><b>Somya</b> I am here too. &#x1F602;</li>
                             </ul>
                             <form>
                                 <input type="text" class="form-control" placeholder="Add a comment">
@@ -137,13 +138,13 @@
                         </a>
                     </div>
                     <div class="col-xs-9 col-sm-10 info-user">
-                        <h3><a href="user-profile.html" title="User Profile">User Name</a></h3>
+                        <h3><a href="user-profile.html" title="User Profile">Naman Arora</a></h3>
                         <p><i>2h</i></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class=" col-sm-8 col-sm-offset-2 data-post">
-                        <p>Lorem Ipsum Dolor si amet</p>
+                        <p>My visit to Tosh. Visit my profile for the blog ;) <br>Thanks!</p>
                         <img src="img/post.jpg" alt="image post" class="img-post">
                         <div class="reaction">
                             &#x2764; 1234 &#x1F603; 54
@@ -179,7 +180,7 @@
                         <p>Lorem Ipsum Dolor si amet</p>
                         Video here
                         <video controls>
-                          <source src="img/post-video.mp4" type="video/mp4">
+                          <source class="vid" src="img/post-video.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                         <div class="reaction">
