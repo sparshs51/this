@@ -8,12 +8,12 @@
 body{
 	background: url(../images/back.jpg) no-repeat;
 	background-size: 100%; 
-    color: #e2e2e2;
+    color: #5e6a68;
 	font-size: 10px;
 	background-color: ;
 	font-family: Dancing Script, cursive; 
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
+	
+	text-shadow:0.4px 0.4px 0.4px #222;
 }
 
 a, a:visited {
