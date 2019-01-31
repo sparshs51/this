@@ -1,19 +1,5 @@
 
 
-.btn-social, .badge, .btn-social, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
-    background: #f3ad00;
-}
-
-.btn-social {
-    border: #f3ad00;
-}
-
-
-
-
-
 html, body, .sidebar-nav, .content-posts {
     height: 100%;
 }
@@ -50,6 +36,16 @@ img {
     height: 30%;
 }
 
+
+.btn-social, .badge, .btn-social, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+    background: #f3ad00;
+}
+
+.btn-social {
+    border: #f3ad00;
+}
 
 
 .emoji  { width:16px;}
